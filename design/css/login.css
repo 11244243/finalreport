@@ -1,0 +1,222 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #dcdcdc;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    flex-grow: 1;
+    justify-content: space-around;
+}
+
+.nav a {
+    text-decoration: none;
+    color: #1a1a2e;
+    font-weight: bold;
+    margin: 0 2px;
+}
+
+.nav a:hover {
+    text-decoration: underline;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.search-bar input {
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.search-bar button {
+    padding: 5px 10px;
+    border: none;
+    background-color: #4a4a8e;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.search-bar button:hover {
+    background-color: #333;
+}
+
+.user-cart a {
+    margin-left: 20px;
+    color: #4a4a8e;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.user-cart a:hover {
+    text-decoration: underline;
+}
+
+/* =====================
+   主體背景 & 容器外框
+   ===================== */
+body {
+    background-color: #f8f8f8;
+    
+}
+
+.container {
+    max-width: 600px; /* 框大一點 */
+    margin: 60px auto 30px auto; 
+    background-color: #fff; 
+    border: 1px solid #ddd; 
+    border-radius: 10px; 
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    padding: 30px;
+}
+
+.container h1 {
+    font-size: 1.8em;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* =====================
+   LINE 快速登入按鈕
+   ===================== */
+.line-login {
+    display: inline-block;
+    width: 100%;
+    background-color: #00c300;
+    color: #fff;
+    padding: 12px 0;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 1.1em;
+    box-sizing: border-box;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.line-login:hover {
+    background-color: #00a600; 
+}
+
+.or {
+    margin: 20px 0;
+    font-size: 1em;
+    color: #666;
+    text-align: center;
+}
+
+/* =====================
+   表單 & 按鈕
+   ===================== */
+.input-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+.input-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 1em;
+    color: #333;
+}
+.input-group input {
+    width: 100%;
+    padding: 12px;
+    font-size: 1em;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.remember-me {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    font-size: 1em;
+}
+.remember-me input {
+    margin-right: 8px;
+}
+
+.login-button {
+    background-color: #8e7cc3;
+    color: #fff;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1em;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.2s;
+}
+.login-button:hover {
+    background-color: #7a68b2;
+}
+
+.options {
+    margin-top: 15px;
+    font-size: 1em;
+    text-align: center;
+}
+.options a {
+    color: #007bff;
+    text-decoration: none;
+}
+.options a:hover {
+    text-decoration: underline;
+}
+
+/* =====================
+   頁面底部 footer
+   ===================== */
+.footer {
+    text-align: center;
+    background-color: #dcdcdc;
+    padding: 20px; 
+    margin-top: 30px;
+}
+.footer p {
+    margin: 5px 0;
+    color: #333;
+    font-weight: bold;
+}
+
+/* 可以加一些常見連結 */
+.footer .footer-links {
+    margin: 10px 0;
+}
+.footer .footer-links a {
+    margin: 0 10px;
+    color: #4a4a8e;
+    text-decoration: none;
+    font-size: 0.9em;
+}
+.footer .footer-links a:hover {
+    text-decoration: underline;
+}
+
+/* 假設還有社群icon */
+.footer .social-icons img {
+    width: 24px;
+    height: 24px;
+    margin: 0 5px;
+    cursor: pointer;
+}

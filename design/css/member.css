@@ -1,0 +1,264 @@
+/* 全域樣式 */
+body {
+  
+  margin: 0;
+  padding: 0;
+  background-color: #f9f9f9;
+  color: #333;
+}
+.member-container {
+  padding: 20px; /* 增加內邊距 */
+}
+
+.profile-details {
+  padding: 15px; /* 增加內部內容與外框的距離 */
+}
+
+.order-history, .coupons {
+  padding: 5px; /* 設置統一的邊距 */
+}
+
+.header {
+  display: flex;
+  justify-content: space-between; /* 標題和導航部分兩端對齊 */
+  align-items: center;
+  padding: 20px;
+  background-color: #999999;
+  color: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.header h1 {
+  margin: 0;
+  font-size: 1.8rem;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+}
+
+.nav-link {
+  color: white;
+  text-decoration: none;
+  font-size: 1rem;
+  margin-left: 20px;
+  transition: color 0.3s;
+}
+
+.nav-link:hover {
+  color: #f0e68c;
+}
+
+/* 會員資料區塊 */
+.member-profile {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* 確保內容分佈到左右兩側 */
+  margin-bottom: 30px;
+  
+}
+
+.profile-photo {
+  flex: 0 0 150px; /* 確保照片部分固定寬度 */
+  text-align: center;
+}
+
+.profile-photo img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  
+}
+
+.profile-details {
+  flex: 1; /* 中間內容部分彈性填充 */
+  margin: 0 20px;
+}
+
+.profile-details h2 {
+  margin: 0 0 10px;
+  font-size: 1.5rem;
+  color: #333;
+}
+
+.profile-details p {
+  margin: 5px 0;
+}
+
+.edit-button {
+  flex: 0 0 auto; /* 讓按鈕保持固定寬度 */
+  padding: 10px 15px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.edit-button:hover {
+  background-color: #388e3c;
+}
+
+/* 訂單紀錄區塊 */
+.order-history h2 {
+  margin-bottom: 15px;
+  font-size: 1.5rem;
+  color: #333;
+}
+
+#order-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 30px;
+}
+
+#order-table th,
+#order-table td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: center;
+}
+
+#order-table th {
+  background-color: #f4f4f4;
+  font-weight: bold;
+  color: #333;
+}
+
+#order-table tr:hover {
+  background-color: #f9f9f9;
+}
+
+/* 折價券區塊 */
+.coupons h2 {
+  margin-bottom: 15px;
+  font-size: 1.5rem;
+  color: #333;
+}
+
+#coupon-list {
+  list-style: none;
+  padding: 0;
+}
+
+#coupon-list li {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  background-color: #f9f9f9;
+}
+
+#coupon-list button {
+  background-color: #ff5722;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#coupon-list button:hover {
+  background-color: #e64a19;
+}
+
+/* 編輯彈出框 */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+  background-color: white;
+  margin: 10% auto;
+  padding: 20px;
+  border-radius: 8px;
+  width: 50%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  position: relative;
+}
+
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 24px;
+  cursor: pointer;
+  color: #aaa;
+}
+
+.close-btn:hover {
+  color: black;
+}
+
+form label {
+  font-weight: bold;
+}
+
+form input {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+form button {
+  padding: 10px 20px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+form button:hover {
+  background-color: #388e3c;
+}
+
+/* footer */
+.footer {
+  text-align: center;
+  background-color: #dcdcdc;
+  padding: 20px; 
+  margin-top: 30px;
+}
+.footer p {
+  margin: 5px 0;
+  color: #333;
+  font-weight: bold;
+}
+
+/* 可以加一些常見連結 */
+.footer .footer-links {
+  margin: 10px 0;
+}
+.footer .footer-links a {
+  margin: 0 10px;
+  color: #4a4a8e;
+  text-decoration: none;
+  font-size: 0.9em;
+}
+.footer .footer-links a:hover {
+  text-decoration: underline;
+}
+
+/* 假設還有社群icon */
+.footer .social-icons img {
+  width: 24px;
+  height: 24px;
+  margin: 0 5px;
+  cursor: pointer;
+}

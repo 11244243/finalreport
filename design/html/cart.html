@@ -1,0 +1,77 @@
+
+
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>購物車</title>
+  <link rel="stylesheet" href="../css/cart.css">
+  
+</head>
+<body>
+  
+  <div class="container">
+    <!-- 導覽連結，可引導回商品頁或其他頁 -->
+    <div class="nav-links">
+      <a href="new.html">回商品頁</a>
+    </div>
+
+    <h2>購物車內容</h2>
+    <div id="cart-content" class="cart-content"></div>
+    <div id="cart-total" class="total"></div>
+
+    <!-- 購買人資訊 -->
+    <div class="buyer-info">
+      <h3>購買人資訊</h3>
+      <label for="buyer-name">姓名：</label>
+      <input type="text" id="buyer-name" placeholder="輸入姓名" required />
+      
+      <label for="buyer-email">電子郵件：</label>
+      <input type="email" id="buyer-email" placeholder="輸入電子郵件" required />
+      
+      <label for="buyer-phone">電話：</label>
+      <input type="tel" id="buyer-phone" placeholder="輸入電話號碼" required />
+    </div>
+
+    <!-- 付款資訊 -->
+    <div class="payment-info">
+      <h3>付款方式</h3>
+      <label for="payment-method">付款方式：</label>
+      <select id="payment-method" onchange="togglePaymentOptions()" required>
+        <option value="credit-card">信用卡</option>
+        <option value="cash-on-delivery">貨到付款</option>
+      </select>
+
+      <!-- 貨到付款選項 -->
+      <div id="cash-on-delivery-options" style="display: none;">
+        <label for="store-selection">選擇取貨超商：</label>
+        <select id="store-selection">
+          <option value="">請選擇</option>
+          <option value="7-eleven">7-Eleven</option>
+          <option value="FamilyMart">全家便利商店</option>
+          <option value="Hi-Life">萊爾富</option>
+          <option value="OK-Mart">OK 便利商店</option>
+        </select>
+        <label for="store-name">門市名稱：</label>
+        <input type="text" id="store-name" placeholder="例如：台北信義店" />
+      </div>
+
+      <!-- 信用卡選項 -->
+      <div id="credit-card-options">
+        <label for="payment-card">信用卡號碼：</label>
+        <input type="text" id="payment-card" placeholder="輸入信用卡號" />
+        
+        <label for="payment-expiry">有效日期：</label>
+        <!-- type=month 讓使用者可選擇 年-月 -->
+        <input type="date" id="payment-expiry" />
+      </div>
+    </div>
+
+    <!-- 結帳按鈕 -->
+    <button class="btn-submit" onclick="submitOrder()">結帳</button>
+  </div>
+
+  <script src="../js/cart.js"></script>
+</body>
+</html>

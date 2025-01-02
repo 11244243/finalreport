@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luna Threads-時尚兩件套</title>
+    <link rel="stylesheet" href="../css/thing.css">
+</head>
+<body>
+    <!-- 導航列 -->
+    <header class="header">
+        <div class="logo">
+            <h1>Luna Threads</h1>
+        </div>
+        <nav class="nav">
+            <a href="../html/index.html">首頁 Home</a>
+            <a href="../html/new.html" >新品 NEW</a>
+            <a href="../html/popular.html">熱銷商品 HOT</a>
+            <a href="../html/nowhave.html">現貨 In Stock</a>
+            <div class="search-bar">
+                <form action="../html/search.html" method="GET">
+                    <input type="text" name="query" placeholder="搜索商品..." required>
+                    <button type="submit">搜尋</button>
+                </form>
+            </div>
+            <div class="user-cart">
+                <a href="../html/login.html">會員</a>
+                <a href="../html/cart.html">購物車</a>
+            </div>
+        </nav>
+    </header>
+
+    <div class="container.thing">
+        <!-- 商品圖片和詳細資訊 -->
+        <div class="product">
+            <div class="product-image">
+                <img src="../photo/new2.webp" alt="商品圖片">
+            </div>
+            <div class="product-info">
+                <h1 class="product-title">時尚兩件套 黑色露肩寬鬆毛衣+蕾絲打底背心</h1>
+                <p class="product-price">價格: <span>$499</span></p>
+                
+                <!-- 規格選擇 -->
+                <div class="product-options">
+                    <label for="size">選擇尺寸:</label>
+                    <select id="size" name="size">
+                        <option value="f">F</option>
+                    </select>
+                </div>
+                <div class="product-options">
+                    <label for="color">選擇顏色:</label>
+                    <select id="color" name="color">
+                        <option value="black">黑色</option>
+                    </select>
+                </div>
+
+                <!-- 購物車和購買按鈕 -->
+                <div class="product-actions">
+                    <div id="cart-alert" class="cart-alert hidden">
+                        已加入購物車
+                    </div>
+                    
+                    <button id="add-to-cart-btn">加入購物車</button>
+
+
+                    <a href="../html/cart.html"><button class="buy-now">立即購買</button></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 商品描述 -->
+    <div class="reviews">
+        <h2>商品描述</h2>
+        <div class="review">
+            <p class="review-text">領型:V領</p>
+            <p class="review-text">袖長:長袖</p>
+            <p class="review-text">材質:蕾絲</p>
+
+        </div>
+    </div>
+
+
+    <!-- 顧客評價 -->
+    <div class="reviews">
+        <h2>顧客評價</h2>
+        
+        <div class="review">
+            <p class="review-text">商品質量很好出貨速度快，會再來購買！</p>
+            <p class="review-author">- 華小姐</p>
+        </div>
+    </div>
+</div>
+
+
+    
+
+
+    <!-- 頁腳 -->
+    <footer class="footer">
+        <p>© 2024 Luna Threads. All rights reserved.</p>
+        <p>顧客服務電話：0800-MOON-LIGHT</p>
+        <p>地址：月光市銀河路86號</p>
+        
+        <!-- 常見連結 -->
+        <div class="footer-links">
+            <a href="../html/about.html">關於我們</a> |
+            <a href="../html/shoppingguide.html">購物須知</a> |
+            <a href="../html/return.html">退換貨政策</a> |
+            <a href="../html/contact.html">聯絡我們</a>
+        </div>
+        
+       
+    </footer>
+   <script src="../js/thing.js"></script>
+</body>
+</html>

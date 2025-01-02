@@ -1,0 +1,212 @@
+/* 基本樣式 */
+body {
+  margin: 0
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #dcdcdc;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  flex-grow: 1;
+  justify-content: space-around;
+}
+
+.nav a {
+  text-decoration: none;
+  color: #1a1a2e;
+  font-weight: bold;
+  margin: 0 2px;
+}
+
+.nav a:hover {
+  text-decoration: underline;
+}
+
+.search-bar {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.search-bar input {
+  padding: 5px 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.search-bar button {
+  padding: 5px 10px;
+  border: none;
+  background-color: #4a4a8e;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.search-bar button:hover {
+  background-color: #333;
+}
+
+.user-cart a {
+  margin-left: 20px;
+  color: #4a4a8e;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.user-cart a:hover {
+  text-decoration: underline;
+}
+/* 主內容樣式 */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Hero 區域 */
+.hero {
+  text-align: center;
+  padding: 40px 20px;
+  background: linear-gradient(to bottom, #f8f9fa,  #999999 /* 背景設為紫色 */);
+  border-radius: 10px;
+  margin-bottom: 40px;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+}
+
+.policy-sections {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+
+.policy-card {
+  background: #fff;
+  border: 1px solid #bebdbd;
+  border-radius: 10px;
+  padding: 20px;
+  flex: 1 1 calc(33.333% - 20px); /* 三等分布局 */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.policy-card h2 {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+}
+
+.policy-card p,
+.policy-card ul,
+.policy-card ol {
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.policy-card ul {
+  padding-left: 20px;
+  list-style: disc;
+}
+
+.policy-card ol {
+  padding-left: 20px;
+  list-style: decimal;
+}
+
+/* FAQ 區域 */
+.faq {
+  background: #999999;
+  padding: 30px;
+  border-radius: 10px;
+  margin-top: 40px;
+}
+
+.faq h2 {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+  color: #ffffff;
+}
+
+.faq-item {
+  margin-bottom: 15px;
+}
+
+.faq-question {
+  font-size: 1.2rem;
+  background: none;
+  border: none;
+  text-align: left;
+  cursor: pointer;
+  font-weight: bold;
+  color:#ffffff;
+  width: 100%;
+  padding: 10px 0;
+  border-bottom: 1px solid #ddd;
+  transition: color 0.3s;
+}
+
+.faq-question:hover {
+  color: #333;
+}
+
+.faq-answer {
+  display: none;
+  font-size: 1rem;
+  margin-top: 10px;
+  line-height: 1.6;
+  color: #333;
+}
+
+/* Footer 樣式 */
+.footer {
+  background-color: #dcdcdc;
+  padding: 20px;
+  text-align: center;
+}
+
+.footer p {
+  margin: 5px 0;
+}
+
+.footer-links {
+  margin-top: 10px;
+}
+
+.footer-links a {
+  margin: 0 10px;
+  color: #4a4a8e;
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
+.footer-links a:hover {
+  text-decoration: underline;
+}

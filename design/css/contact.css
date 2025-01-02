@@ -1,0 +1,158 @@
+/* 基本樣式重置 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    
+    line-height: 1.6;
+    background-color: #f8f8f8;
+    color: #333;
+}
+
+/* 容器 */
+.container {
+    max-width: 1000px;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* 導航列 */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #dcdcdc;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    flex-grow: 1;
+    justify-content: space-around;
+}
+
+.nav a {
+    text-decoration: none;
+    color: #1a1a2e;
+    font-weight: bold;
+    margin: 0 2px;
+}
+
+.nav a:hover {
+    text-decoration: underline;
+}
+
+/* 搜尋欄 */
+.search-bar {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.search-bar input {
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 200px;
+    font-size: 1rem;
+}
+
+.search-bar button {
+    padding: 5px 10px;
+    border: none;
+    background-color: #4a4a8e;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.search-bar button:hover {
+    background-color: #333;
+}
+
+/* 主內容 */
+.contact-intro, .contact-details, .contact-form {
+    margin-bottom: 20px;
+}
+
+h1, h2 {
+    margin-bottom: 15px;
+    color: #4a4a8e;
+}
+
+p {
+    margin-bottom: 10px;
+}
+
+.contact-info p {
+    margin-bottom: 5px;
+}
+
+/* 表單樣式 */
+form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form textarea {
+    resize: none;
+}
+
+.btn-submit {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn-submit:hover {
+    background-color: #45a049;
+}
+
+/* 頁腳 */
+.footer {
+    text-align: center;
+    background-color: #dcdcdc;
+    padding: 20px; 
+    margin-top: 30px;
+}
+
+.footer p {
+    margin: 5px 0;
+    color: #333;
+    font-weight: bold;
+}
+
+.footer .footer-links a {
+    margin: 0 10px;
+    color: #4a4a8e;
+    text-decoration: none;
+}
+
+.footer .footer-links a:hover {
+    text-decoration: underline;
+}

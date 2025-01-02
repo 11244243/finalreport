@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>會員登入</title>
+    <link rel="stylesheet" href="../css/login.css">
+    
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            <h1>Luna Threads</h1>
+        </div>
+        <nav class="nav">
+            <a href="../html/index.html">首頁 Home</a>
+            <a href="../html/new.html">新品 NEW</a>
+            <a href="../html/popular.html">熱銷商品 HOT</a>
+            <a href="../html/nowhave.html">現貨 In Stock</a>
+            <div class="search-bar">
+                <form action="../html/search.html" method="GET">
+                    <input type="text" name="query" placeholder="搜索商品..." required>
+                    <button type="submit">搜尋</button>
+                </form>
+            </div>
+            <div class="user-cart">
+                <a href="../html/login.html">會員</a>
+                <a href="../html/cart.html">購物車</a>
+            </div>
+        </nav>
+    </header>
+
+    <div class="container">
+        <h1>會員登入</h1>
+        <a href="#" class="line-login" onclick="alert('登入成功！'); window.location.href='../html/member.html';">LINE 快速登入</a>
+
+        <div class="or">or</div>
+        <form id="login-form">
+            <div class="input-group">
+                <label for="email">帳戶</label>
+                <input type="text" id="email" placeholder="請輸入您的 E-MAIL 或手機" required>
+            </div>
+            <div class="input-group">
+                <label for="password">密碼</label>
+                <input type="password" id="password" placeholder="請輸入您的密碼" required>
+            </div>
+            <div class="remember-me">
+                <input type="checkbox" id="remember">
+                <label for="remember">保持登入</label>
+            </div>
+            <button type="submit" class="login-button">會員登入</button>
+        </form>
+        <div class="options">
+            <a href="forgot.html">忘記密碼</a> | <a href="newlogin.html">註冊新會員</a>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <p>© 2024 Luna Threads. All rights reserved.</p>
+        <p>顧客服務電話：0800-MOON-LIGHT</p>
+        <p>地址：月光市銀河路86號</p>
+        
+        <!-- 常見連結 -->
+        <div class="footer-links">
+            <a href="../html/about.html">關於我們</a> |
+            <a href="../html/shoppingguide.html">購物須知</a> |
+            <a href="../html/return.html">退換貨政策</a> |
+            <a href="../html/contact.html">聯絡我們</a>
+        </div>
+        
+       
+    </footer>
+    <script src="../js/login.js"></script>
+</body>
+</html>
